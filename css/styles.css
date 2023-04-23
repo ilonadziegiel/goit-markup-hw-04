@@ -108,7 +108,6 @@ body {
   color: var(--font-color2);
 }
 .main-header {
-  background-color: #2f303a;
   color: var(--font-color2);
   font-weight: 900;
   font-size: 44px;
@@ -286,9 +285,11 @@ body {
 }
 
 .main-header-box {
+  background-color: #2f303a;
+  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
+    url("/images/mainimages.jpg");
   display: flex;
   flex-direction: column;
-  background-color: #2f303a;
   align-items: center;
   justify-content: center;
   gap: 30px;
@@ -395,4 +396,51 @@ body {
 }
 .portfolio-box {
   background-color: #ffffff;
+}
+
+.icon-adventages {
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.client-box {
+  background-color: #e5e5e5;
+}
+.client-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.client-icon-box {
+  border-radius: 4px;
+  display: flex;
+  list-style-type: none;
+  column-gap: 30px;
+  margin: 0;
+  margin-bottom: 94px;
+}
+.client-icon {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  cursor: pointer;
+}
+.client-icon:hover {
+  fill: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
+
+.social-icon {
+  fill: #afb1b8;
+  padding: 12px;
+}
+.social-icon:hover {
+  fill: var(--font-color2);
+  border-radius: 50%;
+  background-color: #2196f3;
 }
