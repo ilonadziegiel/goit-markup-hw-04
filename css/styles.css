@@ -46,7 +46,7 @@ body {
 .link-nav:focus {
   color: var(--brand-color);
 }
-.contact-header {
+.mail-header {
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -54,8 +54,15 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contact-header:hover,
-.contact-header:focus {
+.tel-header {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.tel-header:hover {
   color: var(--brand-color);
 }
 .contact-footer {
@@ -180,7 +187,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding: 0px 61px 30px 62px;
+  padding: 0px 61px 0px 62px;
   text-align: center;
   white-space: nowrap;
   margin: 0;
@@ -192,7 +199,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding: 0px 97px 30px 97px;
+  padding: 0px 97px 0px 97px;
   text-align: center;
   white-space: nowrap;
   margin: 0;
@@ -204,7 +211,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding: 0px 91px 30px 92px;
+  padding: 0px 91px 0px 92px;
   text-align: center;
   white-space: nowrap;
   margin: 0;
@@ -359,8 +366,9 @@ body {
   margin: 0;
 }
 .footer-list-box {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 70px;
 }
 
 .address-footer-style {
@@ -438,9 +446,113 @@ body {
 .social-icon {
   fill: #afb1b8;
   padding: 12px;
+  display: flex;
+  width: 44px;
+  height: 44px;
 }
 .social-icon:hover {
   fill: var(--font-color2);
   border-radius: 50%;
   background-color: #2196f3;
+  cursor: pointer;
+}
+.social-icon-box {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-header {
+  text-transform: uppercase;
+  color: var(--font-color2);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1x;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+.footer-contact-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-icon-box {
+  padding-top: 72px;
+  padding-bottom: 100px;
+  display: inline-flexbox;
+}
+.footer-icon-box-inside {
+  display: flex;
+  column-gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.icon-instagram-style {
+  display: flex;
+  fill: var(--font-color2);
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  padding: 12px;
+}
+.icon-instagram-style:hover {
+  fill: var(--font-color2);
+  border-radius: 50%;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.icon-twitter-style {
+  display: flex;
+  fill: var(--font-color2);
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  padding: 12px;
+}
+.icon-twitter-style:hover {
+  fill: var(--font-color2);
+  border-radius: 50%;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.icon-facebook-style {
+  display: flex;
+  fill: var(--font-color2);
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  padding: 12px;
+}
+.icon-facebook-style:hover {
+  fill: var(--font-color2);
+  border-radius: 50%;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.icon-linkedin-style {
+  display: flex;
+  fill: var(--font-color2);
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  padding: 12px;
+}
+.icon-linkedin-style:hover {
+  fill: var(--font-color2);
+  border-radius: 50%;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.icon-tel {
+  fill: #757575;
+}
+.icon-tel:hover {
+  fill: var(--brand-color);
+}
+
+.mail-header:hover use {
+  fill: var(--brand-color);
 }
