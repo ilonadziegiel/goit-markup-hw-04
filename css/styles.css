@@ -142,6 +142,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .team-names {
   font-weight: 500;
@@ -276,7 +278,7 @@ body {
 .main-header-box {
   background-color: #2f303a;
   background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
-    url("/images/mainimages.jpg");
+    url("/images/main/mainimages.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -289,9 +291,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.adventages-color-box {
-  background-color: #e5e5e5;
 }
 .advantages-box {
   display: flex;
@@ -331,6 +330,7 @@ body {
   flex-wrap: nowrap;
   column-gap: 30px;
   margin: 0;
+  padding: 0;
 }
 .card-team-style {
   flex-basis: calc((100%-90px) / 4);
@@ -385,6 +385,7 @@ body {
   border: 1px solid #eeeeee;
   flex-basis: calc((100% - 50px) / 3);
   cursor: pointer;
+  max-width: 370px;
 }
 .card-portfolio-style:hover,
 .card-portfolio-style:focus {
@@ -395,10 +396,16 @@ body {
   background-color: #ffffff;
 }
 
-.icon-adventages {
+.advantages-icon-background {
+  width: 270px;
+  height: 120px;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
-  border-radius: 4px;
+}
+.advantages-icon-style {
+  margin-top: 25px;
+  margin-right: 102px;
+  margin-bottom: 25px;
+  margin-left: 102px;
 }
 .client-box {
   background-color: #e5e5e5;
@@ -449,9 +456,9 @@ body {
   cursor: pointer;
 }
 .social-icon-box {
-  margin: 20px 0;
+  margin: 20px 32px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .social-header {
